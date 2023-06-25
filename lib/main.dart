@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:josenian_quiri/screens/homepage.dart';
+import 'package:josenian_quiri/screens/loading.dart';
 
 void main() {
   runApp(const MyApp());
@@ -14,8 +15,8 @@ class MyApp extends StatelessWidget {
       // Remove the debug banner
       debugShowCheckedModeBanner: false,
       theme: ThemeData(primarySwatch: Colors.amber),
-      title: "Kindacode.comr",
-      home: MyHomePage(),
+
+      home: Loading(),
     );
   }
 }
