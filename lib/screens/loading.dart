@@ -9,20 +9,37 @@ class Loading extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
-        backgroundColor: Color(0xff02C636),
+        backgroundColor: Color(0xffFDC44F),
         body: PageView(
           children: [
             Column(
               children: [
                 SizedBox(
-                  height: 250,
+                  height: 75,
+                ),
+                Center(
+                  child: Container(
+                    width: 350.0,
+                    height: 250.0,
+                    decoration: BoxDecoration(
+                      color: Color(0xffFDC44F),
+                      shape: BoxShape.rectangle,
+                      image: const DecorationImage(
+                        image: AssetImage('assets/jquiri_title.png'),
+                        fit: BoxFit.fill,
+                      ),
+                    ),
+                  ),
+                ),
+                SizedBox(
+                  height: 40,
                 ),
                 Center(
                   child: Container(
                     width: 250.0,
                     height: 250.0,
                     decoration: BoxDecoration(
-                      color: Color(0xff02C636),
+                      color: Color(0xffFDC44F),
                       shape: BoxShape.rectangle,
                       image: const DecorationImage(
                         image: AssetImage('assets/jquiri.gif'),
